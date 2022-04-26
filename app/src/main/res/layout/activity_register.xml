@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Selasa 26April 2022, 10119242, Nadya Nurul Awaliyah, IF6
+-->
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".MainActivity"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_header"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@mipmap/ic_header_back"
+                android:contentDescription="back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="Register"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="65dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingBottom="18dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="@color/font_title"
+                android:backgroundTint="@color/font_title"
+                android:hint="Username"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingBottom="18dp"
+                android:backgroundTint="@color/font_title"
+                android:hint="Email"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingBottom="18dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/font_title"
+                android:hint="Phone Number"
+                android:inputType="number" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:checkedButton="@+id/radio_button_1"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_button_1"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/font_title"
+                    android:text="Male"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/font_title"
+                    android:text="Female"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_marginTop="315dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <Spinner
+                        android:id="@+id/Spinner01"
+                        android:autofillHints="Blood Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <View
+
+                    android:layout_width="153dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/line2"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <Spinner
+                        android:id="@+id/Spinner02"
+                        android:autofillHints="Reshus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="153dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/line2"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="360dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingBottom="18dp"
+                android:backgroundTint="@color/font_title"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="18dp"
+                android:backgroundTint="@color/font_title"
+                android:hint="Retype Password"
+                android:inputType="textPassword" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:checkedButton="@+id/radio_button_2"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio_button_2"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/font_title"
+                    android:text="Personal"/>
+                <RadioButton
+                    android:id="@+id/radio_button_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/font_title"
+                    android:text="Organization"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="560dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <Spinner
+                android:id="@+id/Spinner03"
+                android:autofillHints="Blood Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/font_title"
+                android:hint="Home Address"
+                android:inputType="textPassword" />
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingBottom="18dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/font_title"
+                android:hint="Default Lokasi"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/ic_blood_needed_location" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:textSize="18sp"
+                android:textColor="@color/font_title"
+                android:text="Aturan"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_button_light"
+                tools:context=".MainActivity">
+
+                <Button
+                    android:id="@+id/register"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registrasi"
+                    android:textColor="@color/light_blue"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
